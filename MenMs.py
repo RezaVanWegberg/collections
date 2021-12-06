@@ -1,5 +1,8 @@
 import random
 
+def streep():
+    print("-----------------------------------")
+
 Kleuren = ["oranje", "blauw", "groen", "bruin"]
 Zak = []
 
@@ -14,3 +17,22 @@ def ZakMM():
     print(f"Aantal = {Aantal}")
 
 ZakMM()
+streep()
+
+ZakD = {"oranje":0, "blauw":0, "groen":0, "bruin":0}
+
+def ZakMMD():
+    for y in range(Aantal):
+        random.shuffle(Kleuren)
+        if Kleuren[1] == "oranje":
+            ZakD["oranje"] += 1 
+        elif Kleuren[1] == "blauw":
+            ZakD["blauw"] += 1 
+        elif Kleuren[1] == "groen":
+            ZakD["groen"] += 1 
+        elif Kleuren[1] == "bruin":
+            ZakD["bruin"] += 1   
+    print(ZakD)
+    print(f"Aantal = {Aantal}")
+
+ZakMMD()
