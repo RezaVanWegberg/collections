@@ -87,9 +87,12 @@ def Check(list1,value):
         if value > int(i):
             count = count + 1
 
+
+
 def Positie():
     global RoodOfBlauw
     global count
+    global PositieIn
     while True:
         if  (RoodOfBlauw / 2) == 0:
             while True:
@@ -105,16 +108,21 @@ def Positie():
             break
         else:
             PositieIn = int(input("Kies de positie van het getal. (1 t/m 9) :")) #blauw
-            Check(RedScoreBord,KeuzeIn)
+            Check(BluescoreBord,KeuzeIn)
             if count > 0:
-                RedScoreBord[PositieIn-1] = KeuzeIn
+                BluescoreBord[PositieIn-1] = KeuzeIn
                 RoodOfBlauw = 0
                 count = 0
-            RoodOfBlauw = 0
+                break
             break
 
 
-AlleDobbelstenen()
-ScoreBord()
-Keuze()
-ScoreBord()
+
+def Game():
+    AlleDobbelstenen()
+    ScoreBord()
+    Keuze()
+    ScoreBord
+
+for x in range(5):
+    Game()
