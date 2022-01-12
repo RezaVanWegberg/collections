@@ -85,7 +85,7 @@ def Check(list1,value):
         if i == " ":
             i = 0
         if value > int(i):
-            count = count + 1
+            count = count + 1        
 
 
 
@@ -96,7 +96,7 @@ def Positie():
     while True:
         if  (RoodOfBlauw / 2) == 0:
             while True:
-                PositieIn = int(input("Kies de positie van het getal. (2 t/m 10) :")) #rood
+                PositieIn = int(input("Kies de positie van het getal :")) #rood
                 Check(RedScoreBord,KeuzeIn)
                 if count > 0:
                     RedScoreBord[PositieIn-1] = KeuzeIn

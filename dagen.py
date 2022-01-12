@@ -93,7 +93,7 @@ maximum = int(input("Wat is het maximum? :"))
 
 import random
 RandomAantal = random.randint(minimum,maximum)
-RandomNummer = random.randint(1,6)
+RandomNummer = random.randint(0,6)
 spelList = ['Monopoly', 'Yathzee', 'Bridge', 'Poker', 'Pesten', 'Mens erger je niet', 'Cluedo']
 
 def spelProgramma():
